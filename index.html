@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu curriculo</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+    <h1>Gerador de Currículo</h1>
+    <h2>Preencha o formulário abaixo para gerar seu currículo</h2>
+
+    <div class="step-list">
+        <div class="step active">
+            <div class="step-number ">
+                1
+            </div>
+            <p class="step-description">Informações pessoais</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">
+                2
+            </div>
+            <p class="step-description">Objetivo Profissional
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">
+                3
+            </div>
+            <p class="step-description">Formação Acadêmica</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">
+                4
+            </div>
+            <p class="step-description">Experiência Profissional</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">
+                5
+            </div>
+            <p class="step-description">Habilidades</p>
+        </div>
+    </div>
+
+    <form class="form-step-1">
+        <label for="nome_completo"><span>Nome completo</span></label>
+        <input required type="text" name="nome_completo" id="nome_completo">
+        <label for="endereco_completo"><span>Endereço Completo</span></label>
+        <input required type="text" name="endereco_completo" id="endereco_completo">
+        <label for="telefone"><span>Telefone</span></label>
+        <input required type="text" name="telefone" id="telefone">
+        <label for="mail"><span>Email</span></label>
+        <input required type="email" name="email" id="mail">
+
+        <div class="form-navigation">
+            <button type="button" class="prev-button">Prev</button>
+            <input type="submit" class="next-button" value="Next"></input>
+        </div>
+    </form>
+
+    <form class="form-step-2">
+        <label for="objetivo"><span>Perfil profissional</span></label>
+        <textarea name="perfil_profissional" id="perfil_profissional" cols="5" rows="5"></textarea>
+        <label for="funcao"><span>Função desejada</span></label>
+        <input required type="text" name="funcao" id="funcao">
+
+        <div class="form-navigation">
+            <button type="button" class="prev-button">Prev</button>
+            <input type="submit" class="next-button" value="Next"></input>
+        </div>
+    </form>
+
+    <form class="form-step-3">
+        <label for="instituicao"><span>Instituição</span></label>
+        <input type="text" name="instituicao" id="instituicao">
+        <label for="curso"><span>Curso</span></label>
+        <input type="text" name="curso" id="curso">
+        <label for="curso"><span>Período de realização</span></label>
+        <div class="formacao-academica periodo">
+            <div class="periodo-inputs">
+                <label for="inicio">Data de incio:</label><input type="date" name="inicio" id="inicio">
+                <label for="fim">Data de conclusão:</label><input type="date" name="fim" id="fim">
+            </div>
+        </div>
+
+        <button type="button" class="adicinar-formacao">Adicionar Formação academica</button>
+
+        <div class="formacao-academica-lista">
+            <table class="tabela-formacao-academica">
+                <thead>
+                    <th>Instituição</th>
+                    <th>Curso</th>
+                    <th>Data de inicio</th>
+                    <th>Data de conclusão</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-navigation">
+            <button type="button" class="prev-button">Prev</button>
+            <input type="submit" class="next-button" value="Next"></input>
+        </div>
+    </form>
+
+    <form class="form-step-4">
+        <label for="nome_empresa"><span>Nome da Empresa</span></label>
+        <input type="text" name="innome_empresastituicao" id="nome_empresa">
+        <label for="cargo"><span>Cargo</span></label>
+        <input type="text" name="cargo" id="cargo">
+        <label for="responsabilidades_atribuicoes"><span>Responsabilidades e realizações</span></label>
+        <textarea name="responsabilidades_atribuicoes" id="responsabilidades_atribuicoes" cols="5" rows="5"></textarea>
+        <label for="periodo-trabalho"><span>Período de trabalho</span></label>
+        <div class="experiencia-profissional periodo">
+            <div class="periodo-inputs">
+                <label for="inicio">Data de incio:</label><input type="date" name="inicio" id="inicio_experiencia">
+                <label for="fim">Data de saída:</label><input type="date" name="fim" id="fim_experiencia">
+            </div>
+        </div>
+
+        <button type="button" class="adicinar-experiencia-profissional">Adicionar Experiencia profissional</button>
+
+        <div class="experiencia-profissional-lista">
+            <table class="tabela-experiencia-profissional">
+                <thead>
+                    <th>Nome da empresa</th>
+                    <th>cargo</th>
+                    <th>Responsabilidades e atribuicoes</th>
+                    <th>Data de inicio</th>
+                    <th>Data de saida</th>
+                </thead>
+                <tbody class="tabela-formacao-academica-tbody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-navigation">
+            <button type="button" class="prev-button">Prev</button>
+            <input type="submit" class="next-button" value="Next"></input>
+        </div>
+    </form>
+
+    <form class="form-step-5">
+        <label for="nome_habilidades"><span>Habilidades</span></label>
+        <div class="habilidades-container">
+            <input type="text" name="habilidades" id="habilidades">
+            <button type="button" class="adicionar-habilidade">Adicionar</button>
+        </div>
+
+        <div class="lista-habilidades">
+        </div>
+
+        <div class="form-navigation">
+            <button type="button" class="prev-button">Prev</button>
+            <input type="submit" class="next-button" value="Next"></input>
+        </div>
+    </form>
+
+
+
+    <script src="/dist/bundleIndex.js"></script>
+
+</body>
+
+</html>

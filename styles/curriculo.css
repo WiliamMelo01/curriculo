@@ -1,0 +1,111 @@
+@import "./global.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curriculo-container {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  max-width: 50%;
+}
+
+h1 {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.cargo_desejado {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.endereco,
+.email {
+  margin: 5px 0;
+}
+
+.perfil_profissional {
+  margin: 15px 0 10px 0;
+}
+
+.experiencia_container {
+  width: auto;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.experiencia_data {
+  font-weight: 600;
+  width: 150px !important;
+}
+
+.experiencia_detalhes {
+  flex: 1;
+}
+
+.experiencia_detalhes .experiencia_cargo {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.experiencia_container .experiencia_detalhes .experiencia_empresa {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.experiencia_responsabilidades {
+}
+
+.formacao_container {
+  width: auto;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.formacao_data {
+  font-weight: 600;
+  width: 150px;
+}
+
+.formacao_detalhes {
+  flex: 1;
+}
+
+.formacao_curso {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.formacao_instituicao {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.lista-habilidades {
+  margin-left: 170px;
+  list-style: none;
+}
+
+button {
+  margin: 10px 0;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ff0000;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2em;
+}
